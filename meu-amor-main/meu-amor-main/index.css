@@ -1,0 +1,98 @@
+/* Fundo e estilização geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Fundo branco suave */
+    color: #333; /* Cor de texto geral */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    background: #fff; /* Fundo branco */
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px;
+    background: linear-gradient(135deg, #f5a6b3, #d45d5d); /* Gradiente de tons suaves de vermelho */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Imagem principal */
+.image-container img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Título e texto */
+h1 {
+    color: #b32d28; /* Tom mais forte de vermelho para o título */
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve no título */
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 15px;
+    color: #333; /* Texto em tom mais escuro para destacar */
+}
+
+/* Timer estilizado */
+#timer {
+    font-size: 1.3rem;
+    margin: 20px 0;
+    color: #b32d28; /* Vermelho suave para o timer */
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Sombra suave no timer */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+/* Fonte e estilização para o nome do casal */
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;  /* Ajuste o tamanho conforme necessário */
+    color: #b32d28;  /* Cor vermelha para um toque romântico */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);  /* Sombras para destacar o texto */
+    margin: 20px 0;
+}
